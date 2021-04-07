@@ -1,0 +1,11 @@
+.button {
+	&:visited,
+	&:link {
+		background-color: $color-black;
+		padding: 0.5rem 1.5rem;
+		color: white;
+		font-weight: 700;
+		text-decoration: none;
+		border-radius: 3px;
+	}
+}

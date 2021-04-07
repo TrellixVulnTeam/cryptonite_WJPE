@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -9,4 +10,68 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 1rem; }
+
+body {
+  font-family: "Lato", sans-serif; }
+
+.button:visited, .button:link {
+  background-color: #000;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 3px; }
+
+.header {
+  background-image: linear-gradient(to right, #2b32b2, #1488cc);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  padding: 2rem;
+  height: 60vh; }
+  .header__logo {
+    font-size: 2rem;
+    display: inline-block;
+    margin-bottom: 2rem; }
+  .header__cta {
+    margin-bottom: 2rem; }
+    .header__cta--heading {
+      margin-bottom: 0.5rem; }
+  .header__content {
+    margin-bottom: 1rem; }
+  .header__download {
+    width: 50%;
+    display: flex;
+    justify-content: center; }
+    .header__download-button {
+      height: 10rem;
+      width: 15rem; }
+      .header__download-button--apple, .header__download-button--google {
+        max-width: 100%;
+        max-height: 100%;
+        transition: all 0.3s;
+        cursor: pointer;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+        .header__download-button--apple:hover, .header__download-button--google:hover {
+          transform: translateY(-0.5rem);
+          box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.4); }
+        .header__download-button--apple:active, .header__download-button--google:active {
+          transform: translateY(0); }
+      .header__download-button:not(:last-child) {
+        margin-right: 2rem; }
+
+.imgbox {
+  position: absolute;
+  bottom: 15rem;
+  left: 25%;
+  width: 50%;
+  z-index: 20; }
+
+.img {
+  max-height: 100%;
+  max-width: 100%; }
