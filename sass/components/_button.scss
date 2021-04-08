@@ -3,12 +3,14 @@
 	&:link {
 		display: inline-block;
 		background-color: $color-black;
-		padding: 0.5rem 1.5rem;
+		padding: 1.3rem 2.5rem;
 		color: white;
 		font-weight: 700;
 		text-decoration: none;
 		border-radius: 3px;
 		transition: all 0.3s;
+		font-size: 1.8rem;
+		height: 5rem;
 	}
 
 	&:hover {

@@ -1,8 +1,10 @@
 .imgbox {
-	width: 50%;
+	width: 60%;
 }
 
 .img {
+	border-radius: 0.5rem;
 	max-height: 100%;
 	max-width: 100%;
+	box-shadow: 0 2rem 2rem rgba($color-black, 0.4);
 }

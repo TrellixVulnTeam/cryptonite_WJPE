@@ -1,11 +1,19 @@
 .signup {
-	display: flex;
+	@include flexcenter;
 
 	&__email {
-		font-size: 1rem;
+		font-size: 1.6rem;
 		border: none;
-		padding: 0.45rem;
+		padding: 1rem;
 		border-radius: 3px;
 		margin-right: 0.5rem;
+		outline: none;
+		transition: all 0.1s;
+		height: 5rem;
+		width: 30%;
+
+		&:focus {
+			border-bottom: 0.3rem limegreen solid;
+		}
 	}
 }

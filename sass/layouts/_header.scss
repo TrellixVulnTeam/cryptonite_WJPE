@@ -7,16 +7,16 @@
 			$color-primary-dark,
 			$color-primary-light
 		);
-		display: flex;
+		padding: 5rem;
+		text-align: center;
+		@include flexcenter;
 		flex-direction: column;
-		align-items: center;
-		padding: $defaultrem;
 	}
 
 	&__logo {
 		font-size: $defaultrem;
 		display: inline-block;
-		@include marginbottom;
+		margin: 1rem 0 3.5rem;
 	}
 
 	&__cta {
@@ -24,6 +24,13 @@
 
 		&--heading {
 			margin-bottom: 0.5rem;
+			font-size: $heading-size;
+		}
+
+		&--text {
+			margin: $defaultrem auto 4rem;
+			font-size: $subheading-size;
+			width: 50%;
 		}
 	}
 
@@ -35,9 +42,9 @@
 		width: 50%;
 		display: flex;
 		justify-content: center;
+		margin-bottom: 2rem;
 
 		&-button {
-			height: 10rem;
 			width: 15rem;
 
 			&--apple,

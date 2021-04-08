@@ -11,7 +11,7 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 1rem; }
+  padding: 0 12rem; }
 
 body {
   font-family: "Lato", sans-serif; }
@@ -19,49 +19,72 @@ body {
 .button:visited, .button:link {
   display: inline-block;
   background-color: #000;
-  padding: 0.5rem 1.5rem;
+  padding: 1.3rem 2.5rem;
   color: white;
   font-weight: 700;
   text-decoration: none;
   border-radius: 3px;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  font-size: 1.8rem;
+  height: 5rem; }
 
 .button:hover {
   transform: translateY(-0.3rem); }
 
 .signup {
-  display: flex; }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  justify-self: center; }
   .signup__email {
-    font-size: 1rem;
+    font-size: 1.6rem;
     border: none;
-    padding: 0.45rem;
+    padding: 1rem;
     border-radius: 3px;
-    margin-right: 0.5rem; }
+    margin-right: 0.5rem;
+    outline: none;
+    transition: all 0.1s;
+    height: 5rem;
+    width: 30%; }
+    .signup__email:focus {
+      border-bottom: 0.3rem limegreen solid; }
 
 .header {
   color: #fff; }
   .header__container {
     background-image: linear-gradient(to right, #2b32b2, #1488cc);
+    padding: 5rem;
+    text-align: center;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 2rem; }
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    justify-self: center;
+    flex-direction: column; }
   .header__logo {
     font-size: 2rem;
     display: inline-block;
-    margin-bottom: 2rem; }
+    margin: 1rem 0 3.5rem; }
   .header__cta {
     margin-bottom: 2rem; }
     .header__cta--heading {
-      margin-bottom: 0.5rem; }
+      margin-bottom: 0.5rem;
+      font-size: 7rem; }
+    .header__cta--text {
+      margin: 2rem auto 4rem;
+      font-size: 3rem;
+      width: 50%; }
   .header__content {
     margin-bottom: 1rem; }
   .header__download {
     width: 50%;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 2rem; }
     .header__download-button {
-      height: 10rem;
       width: 15rem; }
       .header__download-button--apple, .header__download-button--google {
         max-width: 100%;
@@ -78,8 +101,14 @@ body {
         margin-right: 2rem; }
 
 .imgbox {
-  width: 50%; }
+  width: 60%; }
 
 .img {
+  border-radius: 0.5rem;
   max-height: 100%;
-  max-width: 100%; }
+  max-width: 100%;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.4); }
+
+.plans__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }

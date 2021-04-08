@@ -1,3 +1,12 @@
 @mixin marginbottom {
 	margin-bottom: 2rem;
 }
+
+@mixin flexcenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	justify-self: center;
+}
