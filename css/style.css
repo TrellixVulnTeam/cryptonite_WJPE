@@ -12,6 +12,9 @@ html {
 body {
   box-sizing: border-box;
   padding: 0 12rem; }
+  @media (max-width: 75em) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: "Lato", sans-serif; }
@@ -29,7 +32,12 @@ body {
   height: 5rem; }
 
 .button:hover {
-  transform: translateY(-0.3rem); }
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
 
 .signup {
   display: flex;
@@ -50,6 +58,57 @@ body {
     width: 30%; }
     .signup__email:focus {
       border-bottom: 0.3rem limegreen solid; }
+    @media (max-width: 56.25em) {
+      .signup__email {
+        width: 100%; } }
+  @media (max-width: 56.25em) {
+    .signup__button {
+      margin-top: 2rem; } }
+  @media (max-width: 56.25em) {
+    .signup {
+      flex-direction: column; } }
+
+.companies__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 5rem; }
+  @media (max-width: 37.5em) {
+    .companies__container {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 5rem; } }
+
+.companies__rule {
+  border: none;
+  border-bottom: 1px solid #b9b9b9; }
+
+.companies__imgbox {
+  width: 50%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  justify-self: center; }
+
+.companies__img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  justify-self: center;
+  padding: 1rem 0 5rem; }
+  .footer__link {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #2b32b2; }
+    .footer__link:not(:last-child) {
+      margin-right: 5rem; }
 
 .header {
   color: #fff; }
@@ -73,10 +132,17 @@ body {
     .header__cta--heading {
       margin-bottom: 0.5rem;
       font-size: 7rem; }
+      @media (max-width: 75em) {
+        .header__cta--heading {
+          font-size: 3rem; } }
     .header__cta--text {
       margin: 2rem auto 4rem;
       font-size: 3rem;
       width: 50%; }
+      @media (max-width: 75em) {
+        .header__cta--text {
+          font-size: 2rem;
+          width: 80%; } }
   .header__content {
     margin-bottom: 1rem; }
   .header__download {
@@ -84,8 +150,12 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem; }
+    @media (max-width: 37.5em) {
+      .header__download {
+        flex-direction: column;
+        margin-top: 2rem; } }
     .header__download-button {
-      width: 15rem; }
+      width: 20rem; }
       .header__download-button--apple, .header__download-button--google {
         max-width: 100%;
         max-height: 100%;
@@ -99,9 +169,15 @@ body {
           transform: translateY(0); }
       .header__download-button:not(:last-child) {
         margin-right: 2rem; }
+      @media (max-width: 37.5em) {
+        .header__download-button {
+          margin-bottom: 2rem; } }
 
 .imgbox {
   width: 60%; }
+  @media (max-width: 37.5em) {
+    .imgbox {
+      width: 100%; } }
 
 .img {
   border-radius: 0.5rem;
@@ -109,6 +185,51 @@ body {
   max-width: 100%;
   box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.4); }
 
-.plans__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); }
+.plans {
+  padding: 4rem; }
+  .plans__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem; }
+    @media (max-width: 56.25em) {
+      .plans__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        justify-self: center;
+        flex-direction: column; } }
+  .plans__column {
+    display: flex;
+    flex-direction: column;
+    text-align: left; }
+  .plans__content {
+    font-size: 1.5rem;
+    line-height: 150%; }
+  .plans__heading {
+    margin-bottom: 2rem; }
+  .plans__icon {
+    font-size: 5rem;
+    color: #2b32b2;
+    margin-bottom: 2rem; }
+
+.testimonial {
+  padding: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  justify-self: center;
+  flex-direction: column;
+  text-align: center; }
+  .testimonial__quote {
+    font-size: 3rem;
+    font-weight: 400; }
+  .testimonial__person {
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-transform: uppercase; }
+  .testimonial__button {
+    margin-top: 5rem; }

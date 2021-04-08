@@ -1,0 +1,21 @@
+.testimonial {
+	padding: 6rem;
+	@include flexcenter;
+	flex-direction: column;
+	text-align: center;
+
+	&__quote {
+		font-size: $subheading-size;
+		font-weight: 400;
+	}
+
+	&__person {
+		font-size: $defaultrem;
+		margin-top: $defaultrem;
+		text-transform: uppercase;
+	}
+
+	&__button {
+		margin-top: 5rem;
+	}
+}

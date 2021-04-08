@@ -25,12 +25,21 @@
 		&--heading {
 			margin-bottom: 0.5rem;
 			font-size: $heading-size;
+
+			@include screen(tab-land) {
+				font-size: $subheading-size;
+			}
 		}
 
 		&--text {
 			margin: $defaultrem auto 4rem;
 			font-size: $subheading-size;
 			width: 50%;
+
+			@include screen(tab-land) {
+				font-size: $defaultrem;
+				width: 80%;
+			}
 		}
 	}
 
@@ -43,9 +52,13 @@
 		display: flex;
 		justify-content: center;
 		margin-bottom: 2rem;
+		@include screen(phone) {
+			flex-direction: column;
+			margin-top: $defaultrem;
+		}
 
 		&-button {
-			width: 15rem;
+			width: 20rem;
 
 			&--apple,
 			&--google {
@@ -67,6 +80,10 @@
 
 			&:not(:last-child) {
 				margin-right: 2rem;
+			}
+
+			@include screen(phone) {
+				margin-bottom: $defaultrem;
 			}
 		}
 	}

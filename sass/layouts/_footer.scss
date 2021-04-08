@@ -1,0 +1,13 @@
+.footer {
+	@include flexcenter;
+	padding: 1rem 0 5rem;
+
+	&__link {
+		font-size: 1.6rem;
+		text-decoration: none;
+		color: $color-primary-dark;
+		&:not(:last-child) {
+			margin-right: 5rem;
+		}
+	}
+}

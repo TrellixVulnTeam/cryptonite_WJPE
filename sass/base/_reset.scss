@@ -13,4 +13,8 @@ html {
 body {
 	box-sizing: border-box;
 	padding: 0 12rem;
+
+	@include screen(tab-land) {
+		padding: 0;
+	}
 }

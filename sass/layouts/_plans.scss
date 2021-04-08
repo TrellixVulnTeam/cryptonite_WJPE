@@ -1,6 +1,35 @@
 .plans {
+	padding: 4rem;
+
 	&__container {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
+		grid-gap: $defaultrem;
+
+		@include screen(tab-port) {
+			@include flexcenter;
+			flex-direction: column;
+		}
+	}
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+
+	&__content {
+		font-size: 1.5rem;
+		line-height: 150%;
+	}
+
+	&__heading {
+		margin-bottom: $defaultrem;
+	}
+
+	&__icon {
+		font-size: 5rem;
+		color: $color-primary-dark;
+		margin-bottom: $defaultrem;
 	}
 }

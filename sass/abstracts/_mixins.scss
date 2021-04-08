@@ -10,3 +10,26 @@
 	justify-items: center;
 	justify-self: center;
 }
+
+@mixin screen($brakepoint) {
+	//600px
+	@if $brakepoint == phone {
+		@media (max-width: 37.5em) {
+			@content;
+		}
+	}
+
+	// 900px
+	@if $brakepoint == tab-port {
+		@media (max-width: 56.25em) {
+			@content;
+		}
+	}
+
+	//1200px
+	@if $brakepoint == tab-land {
+		@media (max-width: 75em) {
+			@content;
+		}
+	}
+}

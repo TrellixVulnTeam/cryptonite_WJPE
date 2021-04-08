@@ -1,5 +1,9 @@
 .imgbox {
 	width: 60%;
+
+	@include screen(phone) {
+		width: 100%;
+	}
 }
 
 .img {
