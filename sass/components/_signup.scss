@@ -1,0 +1,11 @@
+.signup {
+	display: flex;
+
+	&__email {
+		font-size: 1rem;
+		border: none;
+		padding: 0.45rem;
+		border-radius: 3px;
+		margin-right: 0.5rem;
+	}
+}

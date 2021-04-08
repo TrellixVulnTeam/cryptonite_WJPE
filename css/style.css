@@ -17,23 +17,35 @@ body {
   font-family: "Lato", sans-serif; }
 
 .button:visited, .button:link {
+  display: inline-block;
   background-color: #000;
   padding: 0.5rem 1.5rem;
   color: white;
   font-weight: 700;
   text-decoration: none;
-  border-radius: 3px; }
+  border-radius: 3px;
+  transition: all 0.3s; }
+
+.button:hover {
+  transform: translateY(-0.3rem); }
+
+.signup {
+  display: flex; }
+  .signup__email {
+    font-size: 1rem;
+    border: none;
+    padding: 0.45rem;
+    border-radius: 3px;
+    margin-right: 0.5rem; }
 
 .header {
-  background-image: linear-gradient(to right, #2b32b2, #1488cc);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  padding: 2rem;
-  height: 60vh; }
+  color: #fff; }
+  .header__container {
+    background-image: linear-gradient(to right, #2b32b2, #1488cc);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem; }
   .header__logo {
     font-size: 2rem;
     display: inline-block;
@@ -66,11 +78,7 @@ body {
         margin-right: 2rem; }
 
 .imgbox {
-  position: absolute;
-  bottom: 15rem;
-  left: 25%;
-  width: 50%;
-  z-index: 20; }
+  width: 50%; }
 
 .img {
   max-height: 100%;

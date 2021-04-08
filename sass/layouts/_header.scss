@@ -1,17 +1,17 @@
 .header {
-	background-image: linear-gradient(
-		to right,
-		$color-primary-dark,
-		$color-primary-light
-	);
 	color: $color-white;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-	padding: $defaultrem;
-	height: 60vh;
+
+	&__container {
+		background-image: linear-gradient(
+			to right,
+			$color-primary-dark,
+			$color-primary-light
+		);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: $defaultrem;
+	}
 
 	&__logo {
 		font-size: $defaultrem;
