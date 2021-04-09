@@ -153,7 +153,13 @@ body {
     @media (max-width: 37.5em) {
       .header__download {
         flex-direction: column;
-        margin-top: 2rem; } }
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        justify-self: center; } }
     .header__download-button {
       width: 20rem; }
       .header__download-button--apple, .header__download-button--google {
@@ -161,7 +167,13 @@ body {
         max-height: 100%;
         transition: all 0.3s;
         cursor: pointer;
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        justify-self: center; }
         .header__download-button--apple:hover, .header__download-button--google:hover {
           transform: translateY(-0.5rem);
           box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.4); }
@@ -171,7 +183,9 @@ body {
         margin-right: 2rem; }
       @media (max-width: 37.5em) {
         .header__download-button {
-          margin-bottom: 2rem; } }
+          margin-bottom: 2rem; }
+          .header__download-button:not(:last-child) {
+            margin-right: 0; } }
 
 .imgbox {
   width: 60%; }
